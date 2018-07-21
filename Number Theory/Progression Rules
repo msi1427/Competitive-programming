@@ -1,0 +1,8 @@
+1. (n*(n+1)*(2*n+1))/6 = 1^2+2^2+3^2+.....+n^2
+2. n*(n+1)/2 = 1+2+3+...+n
+3. (n*(n+1)/2)^2 = 1^3+2^3+3^3+......+n^3
+4. a/(1-r) sum of infinite geometrical progression
+5. a(1-r^n)/(1-r) sum of finite geometrical progression
+6. n/2*(a+(n-1)*d) sum of linear progression
+7. a+(n-1)*d n'th element of a linear progression
+8.(1*1!)+(2*2!)+(3*3!)+……+(n*n!)=(n+1)!-1
