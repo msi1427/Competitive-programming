@@ -120,31 +120,31 @@ ll RESET(ll n,ll pos) {return(n&~(1<<pos));}
 
 ll arr[212],BIT[212];
 
-ll query(ll index)
+ll query(ll idx)
 {
     ll sum = 0;
-    index = index + 1;
-    while (index>0)
+    idx = idx + 1;
+    while (idx>0)
     {
-        sum += BIT[index];
-        index -= index & (-index);
+        sum += BIT[idx];
+        idx -= idx & (-idx);
     }
     return sum;
 }
 
-void update(ll n, ll index, ll val)
+void update(ll n, ll idx, ll val)
 {
-    index = index + 1;
-    while (index <= n)
+    idx = idx + 1;
+    while (idx <= n)
     {
-       BIT[index] += val;
-       index += index & (-index);
+       BIT[idx] += val;
+       idx += idx & (-idx);
     }
 }
 
 void construct(ll n)
 {
-    for (ll i=1; i<=n; i++) BIT[i] = 0;
+    MEM(BIT,0);
     for (ll i=0; i<n; i++) update(n, i, arr[i]);
 }
 
