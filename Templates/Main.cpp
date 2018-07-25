@@ -49,7 +49,7 @@ using namespace __gnu_pbds;
 #define mpll         map<ll,ll>
 #define cig          cin.ignore()
 #define INF          (ll)1e10
-#define EPS          1e-6
+#define EPS          1e-9
 #define prec(n)      fixed << setprecision(n)
 #define lb           lower_bound
 #define ub           upper_bound
