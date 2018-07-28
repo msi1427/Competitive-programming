@@ -37,3 +37,4 @@ int main()
         cout << "Case " << ++p << ": " << (a*bmod(b,MOD-2))%MOD << endl;
     }
 }
+/*According to euler's theorem a^-1 is equvalent to (a^m-2 mod m)*/
