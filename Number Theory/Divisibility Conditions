@@ -1,0 +1,11 @@
+2 - > last number have to be even
+3 - > sum of all numbers should be divisible by 3
+4 - > last 2 numbers should be divisible by 4
+5 - > last number should be 5 or 0
+6 - > divisible by 2 & 3
+7 - > To find out if a number is divisible by seven, take the last digit, double it, and subtract it from the rest of the number. If you get an answer divisible by 7 (including zero), then the original number is divisible by seven. 
+8 - > last 3 numbers should be divisible by 8
+9 - > sum of all numbers should be divisible by 9
+10 -> last number should be 0
+11 - > Here an easy way to test for divisibility by 11. Take the alternating sum of the digits in the number, read from left to right. If that is divisible by 11, so is the original number. So, for instance, 2728 has alternating sum of digits 2-7+2-8 = -11. 
+***If the length of any sequence is L, then we can choose  contagious segment of c from them in L - c + 1 ways.
