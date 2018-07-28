@@ -1,0 +1,4 @@
+If we have N elements out of which we want to choose K elements and it is allowed to choose one element more than once, then number of ways are given by:
+(N+K-1)C(K)=(N+K-1)! / ((K!)*(N-1)!)
+
+nteresting property of pascal triangle is, the sum of all the elements in ith row is equal to 2^i−1, where i≥1.
