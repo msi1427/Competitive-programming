@@ -1,0 +1,2 @@
+Area of a circle = PI*r*r ; angle in center 2*PI
+Area of a part of a circle = (r*r*(angle))/2
