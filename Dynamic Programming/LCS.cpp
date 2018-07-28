@@ -36,4 +36,3 @@ int main()
     lcs(s1,s2);
 }
 
-// minimum number of edits needed to make a string palindrome s.length() - lcs( s , sreverse )
