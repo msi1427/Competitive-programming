@@ -1,0 +1,4 @@
+Using erase and clear in map
+map<int,int>mp;
+mp.erase(1); //things in 1 erased
+mp.clear(); // whole map cleared
