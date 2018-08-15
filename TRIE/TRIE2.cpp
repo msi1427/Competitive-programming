@@ -144,6 +144,7 @@ ll query(string s)
         node = tr[node][xx];
         if(i==sz(s)-1) return cnt[node][xx];
     }
+    return 0;
 }
 
 int main()
