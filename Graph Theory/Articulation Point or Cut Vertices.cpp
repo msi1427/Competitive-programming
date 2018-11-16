@@ -1,3 +1,5 @@
+// Tutorial : https://www.hackerearth.com/practice/notes/nj/
+
 #define MOD 1000000007
 #define MAX 1000005
 
