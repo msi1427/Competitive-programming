@@ -16,11 +16,9 @@ void seive()
 }
 int Sum_Of_Divisor(int N)
 {
-    	int i,val,count,sum,p,s;
-
-    	val=sqrt(N)+1;
+    	int i,count,sum,p,s;
     	sum=1;
-    	for(i=0;prime[i]<val;i++)
+    	for(i=0;prime[i]*prime[i]<=N;i++)
     	{
        	if(N%prime[i]==0)
         	{
