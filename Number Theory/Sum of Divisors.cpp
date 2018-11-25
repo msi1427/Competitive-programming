@@ -18,7 +18,7 @@ int Sum_Of_Divisor(int N)
 {
     	int i,count,sum,p,s;
     	sum=1;
-    	for(i=0;prime[i]*prime[i]<=N;i++)
+    	for(i=0;prime[i]*prime[i]<=N && i<prime.size();i++)
     	{
        	if(N%prime[i]==0)
         	{
