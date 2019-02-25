@@ -6,7 +6,7 @@ ll pr[212];
 
 ll FIND(ll r)
 {
-    return (pr[r]==r)?r:FIND(pr[r]);
+    return (pr[r]==r)?r:pr[r]=FIND(pr[r]);
 }
 
 ll krushkal()
