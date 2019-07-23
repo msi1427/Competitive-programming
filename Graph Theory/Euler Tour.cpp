@@ -109,6 +109,8 @@ ll RESET(ll n,ll pos) {return(n&~(1<<pos));}
 mt19937 rng32(chrono::steady_clock::now().time_since_epoch().count());
 #define MOD 1000000007
 #define MAX 1000005
+// Euler tour is defined as a way of traversing tree such that each vertex is added to the tour when we visit it (either moving down from parent vertex or returning from child vertex). We start from root and reach back to root after visiting all vertices.
+//It requires exactly 2*N-1 vertices to store Euler tour.
 
 ll n,m,a[MAX],b[MAX],root,Euler[MAX];
 vector<ll>ad[MAX];
