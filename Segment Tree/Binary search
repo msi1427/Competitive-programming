@@ -1,0 +1,8 @@
+ while(l<=r){
+            ll m = (l+r)/2;
+            if((k-(m*a))>(n-m)*b){
+                ans = m;
+                l = m+1;
+            }
+            else r = m-1;
+        }
