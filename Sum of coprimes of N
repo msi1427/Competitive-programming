@@ -1,0 +1,42 @@
+#define NUM 1000005
+long long phi[NUM];
+
+void phi_sieve()
+{
+    for(long long i=1;i<NUM;i++) phi[i]=i;
+    for(long long i=2;i<NUM;i++)
+    {
+        if(phi[i]==i)
+        {
+            phi[i]=i-1;
+            for(long long j=2*i;j<NUM;j+=i)
+            {
+                phi[j] /= i;
+                phi[j] *= (i-1);
+            }
+        }
+    }
+    return;
+}
+
+ll phi_sum(ll n){
+    return (n*phi[n])/2;
+}
+
+ll sum(ll n){
+    return n*(n+1)/2;
+}
+
+ll T,n;
+
+int main()
+{
+    Fast
+    phi_sieve();
+    cin>>T;
+    while(T--){
+        cin>>n;
+        if(n<=2) cout << 0 << "\n";
+        else cout << sum(n-1)-phi_sum(n) << "\n";
+    }
+}
