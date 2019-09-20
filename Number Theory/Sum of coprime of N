@@ -20,7 +20,7 @@ void phi_sieve()
 }
 
 ll phi_sum(ll n){
-    return (n*phi[n])/2;
+    return (n*phi[n])/2; 
 }
 
 ll sum(ll n){
@@ -37,6 +37,6 @@ int main()
     while(T--){
         cin>>n;
         if(n<=2) cout << 0 << "\n";
-        else cout << sum(n-1)-phi_sum(n) << "\n";
+        else cout << sum(n-1)-phi_sum(n) << "\n"; // sum of numbers that are not coprime of N
     }
 }
