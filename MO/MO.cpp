@@ -125,16 +125,16 @@ ll RESET(ll n,ll pos) {return(n&~(1<<pos));}
 ll ara[N+5];
 ll oc[1000005];
 
-struct data
+struct dt
 {
     ll l,r,id;
 };
 
-data Q[N+5];
+dt Q[N+5];
 ll answer[N+5];
 ll sq;
 
-bool cmp(data A,data B)
+bool cmp(dt A,dt B)
 {
     if(A.l/sq!=B.l/sq)return A.l/sq < B.l/sq;
     return A.r<B.r;
