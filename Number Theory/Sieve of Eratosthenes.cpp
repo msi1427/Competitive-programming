@@ -1,8 +1,8 @@
-/* Seive of Eratosthenes */
+/* Sieve of Eratosthenes */
 #define NUM 100005
 bool flag[NUM];
 vector <ll> prime;
-void seive()
+void sieve()
 {
     flag[1]=true;
     for(int i=4;i<NUM;i+=2) flag[i]=true;
