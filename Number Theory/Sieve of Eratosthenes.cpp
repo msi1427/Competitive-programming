@@ -1,5 +1,5 @@
 /* Sieve of Eratosthenes */
-#define NUM 100005
+#define NUM 1000005
 bool flag[NUM];
 vector <ll> prime;
 void sieve()
@@ -13,5 +13,6 @@ void sieve()
 }
 void PF()
 {
-    for(ll i=2;i<NUM;i++) if(!flag[i]) for(ll j=i*2;j<NUM;j+=i) fac[j].pb(i);
+    for(ll i=2;i<NUM;i++) if(!flag[i]) for(ll j=i*2;j<NUM;j+=i) fact[j].pb(i);
+    for(ll i=2;i<NUM;i++) if(!flag[i]) fact[i].pb(i);
 }
